@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<body>
+    <br class="container">
+    <h2 class="display-6 text-left mb-4" style="border-bottom: 2px solid white; padding-bottom: 13px;">Inventory
+        Management</h2>
+
+    <div class="jumbotron p-3 " style="background-color: black; border-bottom: 2px solid white; margin: 0px auto;">
+        <form id="create_form">
+            <div class="d-flex align-items-center">
+                <div class="col-md-2">
+                    <label for="validationCustom01" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Title Here"
+                        required>
+                </div>
+                <div class="col-md-2">
+                    <label for="validationCustom02" class="form-label">Author</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Author name"
+                        required>
+                </div>
+                <div class="col-md-2">
+                    <label for="validationCustom03" class="form-label">Price</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Enter Price" required>
+                </div>
+                <div class="col-md-2">
+                    <label for="validationCustom04" class="form-label">Category</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="Enter Category"
+                        required>
+                </div>
+                <div class="col-md-2" style="margin-top: 26px;">
+                    <button class="add_item btn btn-primary">Add Book</button>
+
+                </div>
+
+                <!-- <input id="create_field" name='todo' autofocus autocomplete="off" class="form-control mr-3" type="text"
+                    style="flex: 1;">
+                <button class="add_item btn btn-primary">Add New Item</button> -->
+            </div>
+        </form>
+    </div>
+
+    <h2 class="mb-2 mt-2" style=" margin-bottom: 15px;">All Books</h2>
+
+    <ul id="item_list" class="" list-group pb-5>
+
+    </ul>
+
+    <!-- <button class="show_more btn btn-primary">
+        Show More
+    </button> -->
+    <br />
+    <br />
+
+    <form action='/logout' method="POST">
+        <button class="btn btn-primary"> Logout <button>
+    </form>
+
+    <!-- <form action='/logout_from_all_devices' method="POST">
+        <button> Logout from all devices <button>
+    </form> -->
+
+    </div>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="/browser.js">
+    </script>
+
+
+
+</body>
+
+</html>
