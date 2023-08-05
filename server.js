@@ -17,7 +17,7 @@ const { rateLimiting } = require("./middlewares/rateLimiting");
 const app = express();
 const PORT = process.env.PORT || 8000;
 const saltRound = 11;
-const MONGO_URI = `mongodb+srv://karan:12345@cluster0.3ije6wh.mongodb.net/march-todo-app`;
+const MONGO_URI = `mongodb+srv://Blog_access:12345@cluster0.mnwa7kn.mongodb.net/march-todo-app`;
 
 app.set("view engine", "ejs");
 
